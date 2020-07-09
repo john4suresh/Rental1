@@ -1,0 +1,11 @@
+.navitems {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color:grey;
+  padding:4px
+}

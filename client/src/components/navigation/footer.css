@@ -1,0 +1,17 @@
+.main-footer{
+    background-color: #ddd0d1;
+    padding-top: 0.5cm;
+    position: relative;
+    bottom: 0;
+    width:100%; 
+    color: black;   
+}
+
+.text-xs-center p {
+    color:blue;
+}
+.text{
+    color:red;
+    padding-inline-start: 5ch;
+}
+
