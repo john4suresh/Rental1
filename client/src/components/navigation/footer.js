@@ -42,6 +42,16 @@ const Footer = () => {
                    <li>Juice maker</li>
                    <li>Sewing machine</li>
                 </div>
+                {/* column4 */}
+                <div className="col-md-3 col-sm-6">
+                 
+                  
+                   <li>Grinder</li>
+                   <li>Table fan</li>
+                   <li>Induction cooker</li>
+                   <li>Roti maker</li>
+                   <li>Hair dryer</li>
+                </div>
                </div>
 
                {/* Footer bottom */}

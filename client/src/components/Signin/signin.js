@@ -125,7 +125,7 @@ class Signin extends React.Component {
             </select>
           </div>
       <div style={{textAlign:"center",marginTop:"30px"}}>
-        <button type="submit" className="btn btn-primary mt-2" style={{margin:"20px",textAlign:"center",width:"110px"}}>
+        <button type="submit" className="btn btn-primary mt-2" style={{margin:"20px",textAlign:"center",width:"90px"}}>
           Sign In
         </button>
         </div>
