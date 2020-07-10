@@ -66,10 +66,10 @@ class Seller extends React.Component {
         onSubmit={this.handlesubmit}
         style={{ margin: "auto", width: "500px" }}
       >
-        <h2>Post Your Product Details</h2>
+        <h1 style={{textAlign:"center",margin:"15px"}}>Post Your Product Details</h1>
         <div className="panel panel-default mt-4"></div>
 
-        <div className="panel panel-default">
+        <div className="panel panel-default" style={{margin:"10px"}}>
           <label htmlFor="name">Enter Name of Product</label>
           <input
             type="name"
@@ -82,7 +82,7 @@ class Seller extends React.Component {
           />
         </div>
 
-        <div className="panel panel-default">
+        <div className="panel panel-default" style={{margin:"10px"}}>
           <label htmlFor="name">Enter price for a week</label>
           <input
             type="text"
@@ -94,8 +94,8 @@ class Seller extends React.Component {
             onChange={this.handlechange}
           />
 
-          <div className="panel panel-default">
-            <label htmlFor="name">Enter Delivery Time</label>
+          <div className="panel panel-default" style={{margin:"10px"}}>
+            <label htmlFor="name" style={{marginLeft:"-5px",}}>Enter Delivery Time</label>
             <input
               type="text"
               required
@@ -104,10 +104,12 @@ class Seller extends React.Component {
               placeholder="delivery time"
               value={this.state.delivery}
               onChange={this.handlechange}
+              style={{marginLeft:"-10px",width: "480px"}}
+
             />
           </div>
-          <div className="panel panel-default">
-            <label htmlFor="image">upload your Image</label>
+          <div className="panel panel-default" style={{margin:"10px"}}>
+            <label htmlFor="image" style={{marginLeft:"-5px",}}>Upload your Image</label>
             <input
               type="file"
               accept="image/*"
@@ -115,10 +117,11 @@ class Seller extends React.Component {
               name="image"
               placeholder="image"
               onChange={this.imageUpload}
+              style={{marginLeft:"-10px" , width: "480px"}}
             />
           </div>
         </div>
-        <button type="submit" className="btn btn-primary mt-2">
+        <button type="submit" className="btn btn-primary mt-2" style={{margin:"40px",textAlign:"center",width:"110px",marginLeft:"200px"}}>
           Submit
         </button>
       </form>
