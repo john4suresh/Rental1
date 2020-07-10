@@ -30,8 +30,8 @@ class Homecards extends React.Component {
   }
 
   handleclick = (item) => {
-    console.log(item.description);
-    console.log(item.description === "House Appliances");
+    // console.log(item.description);
+    // console.log(item.description === "House Appliances");
     if(item.description  === "House Appliances" )
     {
       

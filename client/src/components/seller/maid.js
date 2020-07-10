@@ -33,7 +33,7 @@ class Maid extends React.Component {
       .then((res) => res.json())
       .then((data) => {
         this.state.image = data.url;
-        console.log(data);
+        // console.log(data);
       })
       .catch((err) => console.log(err));
   };
@@ -131,7 +131,7 @@ const mapDispatchToProps = dispatch => {
   return {
     Passproduct:data => {
       dispatch(Passsellerproduct(data));
-      console.log(data);
+      // console.log(data);
     }
   }
 }

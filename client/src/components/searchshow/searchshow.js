@@ -17,13 +17,13 @@ class Searchshow extends React.Component {
         fetch(`/home/${this.props.value}`)
             .then(response => response.json())
             .then(data => {
-              console.log(data.length);
+              // console.log(data.length);
                  this.setState({
                      itemshow:data,
                      number:data.length,
 
                  });
-                 console.log(this.state.itemshow)
+                //  console.log(this.state.itemshow)
             })
 
     }
@@ -92,7 +92,7 @@ class Searchshow extends React.Component {
 
 
 const mapStateToProps = state => {
-    console.log(state);
+    // console.log(state);
     return{
         value:state.searchvalue,
         tokenvalue:state.token.token,
@@ -107,7 +107,7 @@ const mapDispatchToProps = dispatch =>{
          },
          totalcost: item => {
           dispatch(totalcost(item.item.price));
-          console.log(item.item.price);
+          // console.log(item.item.price);
         }
     }
   }

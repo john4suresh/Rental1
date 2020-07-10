@@ -16,8 +16,7 @@ class Housemaid extends React.Component{
         fetch('/maids')
            .then(response => response.json())
            .then(data => {
-             console.log(5);
-             console.log(data);
+            //  console.log(data);
                 this.setState({
                     maidimages:data,
                 })
@@ -72,7 +71,7 @@ const mapDispatchToProps = dispatch =>{
        },
        totalcost: item => {
         dispatch(totalcost(item.item.price));
-        console.log(item.item.price);
+        // console.log(item.item.price);
       }
   }
 }

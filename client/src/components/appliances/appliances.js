@@ -19,13 +19,13 @@ class Appliance extends React.Component {
           .then(response => response.json())
           .then(data => 
             {
-              console.log(data);
-              console.log(typeof data);
+              // console.log(data);
+              // console.log(typeof data);
             this.setState({
               appliancecards: data ,
 
             });
-            console.log(this.state.appliancecards);
+            // console.log(this.state.appliancecards);
           });
       }
 
@@ -82,7 +82,7 @@ const mapDispatchToProps = dispatch =>{
 
        totalcost: item => {
          dispatch(totalcost(item.item.price));
-         console.log(item.item.price);
+        //  console.log(item.item.price);
        }
 
   }

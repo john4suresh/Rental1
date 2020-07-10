@@ -23,8 +23,8 @@ class Search extends React.Component {
     // e.preventdefault();
    // const { value } = this.state;
     this.props.search(value);
-    console.log(this.state.value);
-    console.log({value});       
+    // console.log(this.state.value);
+    // console.log({value});       
      this.setState({
        isloggedin:true,
        value:'',

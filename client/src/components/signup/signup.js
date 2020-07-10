@@ -29,13 +29,13 @@ class Signup extends React.Component {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.error) {
-          console.log("Error");
+          // console.log("Error");
           alert(data.error);
         }
         if (data.message) {
-          console.log("SignIn");
+          // console.log("SignIn");
           this.props.history.push("/SignIn");
         } else {
           const error = new Error(data.error);

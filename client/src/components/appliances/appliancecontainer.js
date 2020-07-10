@@ -19,7 +19,7 @@ class Appcontainer extends React.Component {
              this.setState({
                  userdata:data,
              })
-             console.log(this.state.userdata);
+            //  console.log(this.state.userdata);
          })
 
          

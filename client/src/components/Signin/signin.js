@@ -39,11 +39,11 @@ class Signin extends React.Component {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         this.props.passtoken(data);
 
         if (data.Error) {
-          console.log("Error");
+          // console.log("Error");
           alert(data.Error);
         }
         if (data.user) {
@@ -64,7 +64,7 @@ class Signin extends React.Component {
         // }
       })
       .catch((err) => {
-        console.error(err);
+        // console.error(err);
         alert("Error logging in please try again");
       });
   };

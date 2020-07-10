@@ -22,7 +22,7 @@ class Navigation extends React.Component {
           </Link>
           <span className="navbar-brand ml-4" onClick={() => {
               signout(() => {
-              console.log("Signout");
+              // console.log("Signout");
               });
               this.props.passtoken(localStorage.removeItem("jwt"));
               this.props.history.push('/SignIn')
@@ -71,14 +71,14 @@ class Navigation extends React.Component {
 }
 
 const mapStateToProps = state => {
-  console.log(state.token.token);
+  // console.log(state.token.token);
   return {
     tokenvalue:state.token.token,
   }
 }
 
 const mapDispatchToProps = dispatch => {
-  console.log('hiii');
+  // console.log('hiii');
   return{
       passtoken: () => {
         dispatch(Passtoken(""));

@@ -21,7 +21,7 @@ const cartreducer = (state=initstate,action) => {
             }
 
         case "REMOVE_FROM_CART": 
-          console.log(action.payload.item.name);
+        //   console.log(action.payload.item.name);
          // console.log(state.cartdata.alt_description);
           return{
               ...state,
@@ -32,9 +32,9 @@ const cartreducer = (state=initstate,action) => {
 
         case "SEARCH_VALUE":
             //difference between action.payload and action.payload.value?
-            console.log(action.payload);
+            // console.log(action.payload);
             const searchvalue = action.payload ;
-            console.log(searchvalue);
+            // console.log(searchvalue);
             return{
                 ...state,
                 searchvalue
@@ -52,7 +52,7 @@ const cartreducer = (state=initstate,action) => {
         case "GET_SELLER_PRODUCT":
 
         const SellerProductName = action.payload ;
-        console.log(SellerProductName);
+        // console.log(SellerProductName);
           return {
               ...state ,
               SellerProductName ,
@@ -60,7 +60,7 @@ const cartreducer = (state=initstate,action) => {
 
         case "TOTAL_COST" : 
        const price = state.price +  action.payload ;
-       console.log(price);
+    //    console.log(price);
         return{
             ...state ,
             price
