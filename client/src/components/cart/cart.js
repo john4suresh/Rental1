@@ -14,14 +14,14 @@ class Cart extends React.Component {
 
 
 handleremove = (item) => {
-    console.log(item);
+    // console.log(item);
 
     this.setState({
         number:this.props.numbers,
     })
     
     this.props.remove(item);
-    console.log(this.props.cartitems);
+    // console.log(this.props.cartitems);
    // this.props.history.push('/cart');
     this.props.subtractprice(item.item.price);
     
@@ -30,7 +30,7 @@ handleremove = (item) => {
 
 
     render(){
-        console.log(this.props.cartitems);
+        // console.log(this.props.cartitems);
         const Cartitem = this.props.cartitems.map(item => {
         return(
             <Card className = "mx-7 my-5" style={{ width: '30rem',marginLeft:'100px' }}>
@@ -85,7 +85,7 @@ handleremove = (item) => {
 
 
 const mapStateToProps = state =>{
-    console.log(state.cartdata.length);
+    // console.log(state.cartdata.length);
     return{
         cartitems: state.cartdata,
         numbers:state.cartdata.length,
@@ -96,7 +96,7 @@ const mapStateToProps = state =>{
 const mapDispatchToProps = dispatch => {
     return{
         remove: item => {
-            console.log(item);
+            // console.log(item);
             dispatch(Remove(item));
         },
         subtractprice: item => {

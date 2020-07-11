@@ -12,13 +12,13 @@ class Sellercart extends React.Component {
 
 
     componentDidMount(){
-        console.log(this.props.SellerProduct);
+        // console.log(this.props.SellerProduct);
         if(this.props.SellerProduct.name){
        this.setState({
            userdata:[this.props.SellerProduct],
            
        })
-       console.log(this.state.userdata);
+    //    console.log(this.state.userdata);
     }
 
         }
@@ -53,7 +53,7 @@ class Sellercart extends React.Component {
 }
 
 const mapStateToProps = state => {
-    console.log(state.SellerProductName);
+    // console.log(state.SellerProductName);
     return {
         SellerProduct : state.SellerProductName
     }
