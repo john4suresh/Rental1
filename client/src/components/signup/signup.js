@@ -1,6 +1,8 @@
 import React from "react";
 //import { Redirect } from "react-router-dom";
 import { withRouter } from "react-router";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class Signup extends React.Component {
   state = {
@@ -32,7 +34,8 @@ class Signup extends React.Component {
         // console.log(data);
         if (data.error) {
           // console.log("Error");
-          alert(data.error);
+          // alert(data.error);
+          toast.error(data.error);
         }
         if (data.message) {
           // console.log("SignIn");
@@ -121,6 +124,7 @@ class Signup extends React.Component {
         <button type="submit" className="btn btn-primary mt-4" style={{margin:"20px",textAlign:"center",width:"110px"}}>
           Sign Up
         </button>
+        <ToastContainer autoClose={false} />
         </div>
       </form>
     

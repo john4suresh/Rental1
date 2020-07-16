@@ -2,6 +2,8 @@ import React from "react";
 import { withRouter } from "react-router";
 import { connect } from "react-redux";
 import { Passtoken } from "../reducers/actions";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class Signin extends React.Component {
   state = {
@@ -44,12 +46,14 @@ class Signin extends React.Component {
 
         if (data.Error) {
           // console.log("Error");
-          alert(data.Error);
+          // alert(data.Error);
+          toast.error(data.Error);
         }
         if (data.user) {
           this.authenticate(data, () => {
-            //          console.log("SignIn");
-            this.props.history.push("/");
+                    //  console.log("SignIn");
+          this.props.history.push("/");
+          toast("Signed In Successfully");
           });
         }
         if (data.seller) {
@@ -128,6 +132,7 @@ class Signin extends React.Component {
         <button type="submit" className="btn btn-primary mt-2" style={{margin:"20px",textAlign:"center",width:"90px"}}>
           Sign In
         </button>
+        <ToastContainer autoClose={false} />
         </div>
       </form>
     );
